@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class Calculator {
     public static void main(String[] args) {
         Scanner in=new Scanner(System.in);
-        int ans=0;
+        int res=0;
         while (true){
             System.out.println("Enter operator");
         char op=in.next().trim().charAt(0);
@@ -15,21 +15,21 @@ public class Calculator {
             int b=in.nextInt();
 
             if(op=='+'){
-                ans=a+b;
+                res=a+b;
             }
             if(op=='-'){
-                ans=a-b;
+                res=a-b;
             }
             if(op=='*') {
-                ans = a * b;
+                res = a * b;
             }
             if(op=='/'){
                 if(b>0){
-                    ans=a/b;
+                    res=a/b;
                 }
             }
             if(op=='%'){
-                ans=a%b;
+                res=a%b;
             }
 
             }
@@ -39,7 +39,7 @@ public class Calculator {
         else {
             System.out.println("Invalid operation");
         }
-            System.out.println("Answe="+ans);
+            System.out.println("Answe="+res);
         }
     }
 
